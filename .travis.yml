@@ -3,7 +3,7 @@ services:
   - docker
 
 before_intall:
-  - docker build -t yharwyn/docker-react:latest -f Dockerfile.dev .
+  - docker build -t docker-react:latest -f Dockerfile.dev .
 
 script:
-  - docker run yharwyn/docker-react:latest pwd 
+  - docker run docker-react:latest pwd 

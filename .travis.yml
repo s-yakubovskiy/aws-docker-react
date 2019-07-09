@@ -3,7 +3,7 @@ services:
   - docker
 
 before_intall:
-  - docker build -t docker-react:latest -f Dockerfile.dev .
+  - docker build -t docker-react:latest -f xxx .
 
 script:
   - docker run docker-react:latest pwd 
